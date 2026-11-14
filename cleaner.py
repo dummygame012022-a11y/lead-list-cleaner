@@ -14,18 +14,18 @@ for x in rows:
     seen.add(key)
     flags = []
     if not e:
-        flags.append("walay email")
+        flags.append("missing email")
     elif not re.match(r"^[^@\s]+@[^@\s]+\.[a-z]{2,}$", e):
-        flags.append("sayop email")
+        flags.append("invalid email")
         r["email_bad"] += 1
     if w:
         if not w.startswith("https://"):
             w = "https://" + re.sub(r"^https?://", "", w)
             r["web_fix"] += 1
     else:
-        flags.append("walay website")
+        flags.append("missing website")
     if not (len(p) == 11 and p.startswith("09")):
-        flags.append("sayop phone")
+        flags.append("invalid phone")
         r["phone_bad"] += 1
     out.append([n, e, w, p, ", ".join(flags) or "ok"])
 with open("clean.csv", "w", newline="") as f:
@@ -33,12 +33,12 @@ with open("clean.csv", "w", newline="") as f:
     wr.writerow(["name", "email", "website", "phone", "status"])
     wr.writerows(out)
 rep = f"""LEAD CLEANER REPORT
-Total sa sinugdan: {r['total']}
-Duplicate nga gitangtang: {r['dup']}
-Limpyo nga row: {len(out)}
-Website nga giayo: {r['web_fix']}
-Sayop nga email: {r['email_bad']}
-Sayop nga phone: {r['phone_bad']}
+Total rows: {r['total']}
+Duplicates removed: {r['dup']}
+Clean rows: {len(out)}
+Websites fixed: {r['web_fix']}
+Invalid emails: {r['email_bad']}
+Invalid phones: {r['phone_bad']}
 """
 open("report.txt", "w").write(rep)
 print(rep)

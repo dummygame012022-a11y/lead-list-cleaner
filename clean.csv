@@ -1,25 +1,25 @@
 name,email,website,phone,status
-Juan Store,juanstore@gmail.com,https://www.site.com,123,sayop phone
+Juan Store,juanstore@gmail.com,https://www.site.com,123,invalid phone
 Rey Auto Parts,reyautoparts@yahoo.com,https://www.site.com,09171234567,ok
 Rey Auto Parts,reyautoparts@gmail.com,https://www.site.com,09171234567,ok
-Ana Pharmacy,anapharmacy@gmail,,,"sayop email, walay website, sayop phone"
-Rey Auto Parts,reyautoparts@mail,,,"sayop email, walay website, sayop phone"
-Juan Store,,,,"walay email, walay website, sayop phone"
+Ana Pharmacy,anapharmacy@gmail,,,"invalid email, missing website, invalid phone"
+Rey Auto Parts,reyautoparts@mail,,,"invalid email, missing website, invalid phone"
+Juan Store,,,,"missing email, missing website, invalid phone"
 Ana Pharmacy,anapharmacy@yahoo.com,https://shop.ph,09171234567,ok
 Juan Store,juanstore@yahoo.com,https://ok.com,09171234567,ok
-Ana Pharmacy,,,,"walay email, walay website, sayop phone"
-Cebu Hardware,cebuhardware@gmail.com,https://www.site.com,123,sayop phone
-Cebu Hardware,cebuhardware@gmail,https://ok.com,,"sayop email, sayop phone"
-Maria Bakery,mariabakery@gmail.com,https://ok.com,123,sayop phone
-Lito Salon,litosalon@yahoo.com,https://ok.com,,sayop phone
-Ana Pharmacy,anapharmacy@mail,https://www.site.com,09171234567,sayop email
-Lito Salon,litosalon@mail,https://ok.com,123,"sayop email, sayop phone"
-Juan Store,juanstore@mail,https://shop.ph,09171234567,sayop email
+Ana Pharmacy,,,,"missing email, missing website, invalid phone"
+Cebu Hardware,cebuhardware@gmail.com,https://www.site.com,123,invalid phone
+Cebu Hardware,cebuhardware@gmail,https://ok.com,,"invalid email, invalid phone"
+Maria Bakery,mariabakery@gmail.com,https://ok.com,123,invalid phone
+Lito Salon,litosalon@yahoo.com,https://ok.com,,invalid phone
+Ana Pharmacy,anapharmacy@mail,https://www.site.com,09171234567,invalid email
+Lito Salon,litosalon@mail,https://ok.com,123,"invalid email, invalid phone"
+Juan Store,juanstore@mail,https://shop.ph,09171234567,invalid email
 Cebu Hardware,cebuhardware@yahoo.com,https://www.site.com,09171234567,ok
-Cebu Hardware,,,,"walay email, walay website, sayop phone"
+Cebu Hardware,,,,"missing email, missing website, invalid phone"
 Ana Pharmacy,anapharmacy@gmail.com,https://shop.ph,09171234567,ok
-Rey Auto Parts,,https://www.site.com,123,"walay email, sayop phone"
-Cebu Hardware,cebuhardware@mail,https://ok.com,,"sayop email, sayop phone"
-Juan Store,juanstore@gmail,,,"sayop email, walay website, sayop phone"
-Rey Auto Parts,reyautoparts@gmail,,,"sayop email, walay website, sayop phone"
-Maria Bakery,mariabakery@yahoo.com,,09171234567,walay website
+Rey Auto Parts,,https://www.site.com,123,"missing email, invalid phone"
+Cebu Hardware,cebuhardware@mail,https://ok.com,,"invalid email, invalid phone"
+Juan Store,juanstore@gmail,,,"invalid email, missing website, invalid phone"
+Rey Auto Parts,reyautoparts@gmail,,,"invalid email, missing website, invalid phone"
+Maria Bakery,mariabakery@yahoo.com,,09171234567,missing website

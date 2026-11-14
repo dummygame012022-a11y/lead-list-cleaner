@@ -1,29 +1,29 @@
 # Lead List Cleaner
 
-Python script nga naglimpyo sa gubot nga CSV sa mga lead (kompanya, email, website, phone).
+Python script that cleans a messy lead list CSV (company, email, website, phone).
 
-## Unsa ang gibuhat
-- Tangtang ang duplicate
-- Limpyohan ang gap ug letra sa ngalan
-- I-check kung husto ang email ug phone
-- Butangan og https:// ang website
-- Markahan ang walay sulod o sayop (status column)
-- Mo-save og clean.csv ug report.txt
+## What it does
+- Removes duplicate rows
+- Trims extra spaces and fixes name casing
+- Validates email and phone format
+- Adds https:// to websites
+- Flags missing or invalid fields in a status column
+- Saves clean.csv and report.txt
 
 ## Before
     JUAN STORE  ,juanstore@gmail,www.site.com,0917 123 4567
     Ana Pharmacy,,,123
 
 ## After
-    Juan Store,juanstore@gmail,https://www.site.com,09171234567,sayop email
-    Ana Pharmacy,,,123,"walay email, walay website, sayop phone"
+    Juan Store,juanstore@gmail,https://www.site.com,09171234567,invalid email
+    Ana Pharmacy,,,123,"missing email, missing website, invalid phone"
 
-## Sample nga resulta
-    Total: 68 | Duplicate nga gitangtang: 44 | Limpyo: 24
-    Website giayo: 10 | Sayop email: 9 | Sayop phone: 15
+## Sample result
+    Total rows: 68 | Duplicates removed: 44 | Clean rows: 24
+    Websites fixed: 10 | Invalid emails: 9 | Invalid phones: 15
 
-## Unsaon pagpadagan
-    python make_data.py   (himo og peke nga messy.csv)
-    python cleaner.py     (himo og clean.csv ug report.txt)
+## How to run
+    python make_data.py   (creates a fake messy.csv)
+    python cleaner.py     (creates clean.csv and report.txt)
 
-Peke ang data. Python 3 ra, walay dugang nga i-install.
+Sample data is fake. Python 3 only, no extra packages.
