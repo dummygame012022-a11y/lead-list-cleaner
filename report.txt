@@ -1,0 +1,7 @@
+LEAD CLEANER REPORT
+Total sa sinugdan: 68
+Duplicate nga gitangtang: 44
+Limpyo nga row: 24
+Website nga giayo: 10
+Sayop nga email: 9
+Sayop nga phone: 15
