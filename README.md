@@ -27,3 +27,4 @@ Python script that cleans a messy lead list CSV (company, email, website, phone)
     python cleaner.py     (creates clean.csv and report.txt)
 
 Sample data is fake. Python 3 only, no extra packages.
+![Result](result.png)
