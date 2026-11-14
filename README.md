@@ -53,3 +53,9 @@ Run it:
     python dashboard.py
 
 Then open http://127.0.0.1:8090 in your browser. To open it from another device on the same Wi-Fi, use the phone's Wi-Fi address with port 8090.
+
+### Screenshots
+
+![Dashboard screenshot 1](dashboard1.png)
+
+![Dashboard screenshot 2](dashboard2.png)
