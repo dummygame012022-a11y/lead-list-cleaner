@@ -28,3 +28,12 @@ Python script that cleans a messy lead list CSV (company, email, website, phone)
 
 Sample data is fake. Python 3 only, no extra packages.
 ![Result](result.png)
+
+## SQL practice
+Loads clean.csv into SQLite and practices queries on it.
+
+    python sql_practice.py   (loads the data, runs 4 example queries)
+    python my_sql.py         (practice: SELECT, WHERE, LIKE, JOIN)
+    python my_sql2.py        (practice: ORDER BY, HAVING, UPDATE, DELETE on a safe copy)
+
+Covers: SELECT, WHERE, LIKE, ORDER BY, GROUP BY, HAVING, JOIN, UPDATE, DELETE.
