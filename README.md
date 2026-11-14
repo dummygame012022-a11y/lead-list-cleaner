@@ -37,3 +37,19 @@ Loads clean.csv into SQLite and practices queries on it.
     python my_sql2.py        (practice: ORDER BY, HAVING, UPDATE, DELETE on a safe copy)
 
 Covers: SELECT, WHERE, LIKE, ORDER BY, GROUP BY, HAVING, JOIN, UPDATE, DELETE.
+
+## Lead Dashboard
+
+A small Flask web page that shows the cleaned leads (`clean.csv`).
+
+Features:
+- Search by name, email or website
+- Filter: all rows, ok, or problems
+- Counts of ok and problem rows
+- Download the filtered rows as CSV
+
+Run it:
+
+    python dashboard.py
+
+Then open http://127.0.0.1:8090 in your browser. To open it from another device on the same Wi-Fi, use the phone's Wi-Fi address with port 8090.
